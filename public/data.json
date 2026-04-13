@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Rahim Uddin",
+    "picture": "https://randomuser.me/api/portraits/men/32.jpg",
+    "email": "rahim.uddin@gmail.com",
+    "days_since_contact": 20,
+    "status": "overdue",
+    "tags": ["university", "close friend"],
+    "bio": "We studied CSE together at university. Used to work on programming contests and late-night coding sessions.",
+    "goal": 14,
+    "next_due_date": "2025-07-10"
+  },
+  {
+    "id": 2,
+    "name": "Nusrat Jahan",
+    "picture": "https://randomuser.me/api/portraits/women/44.jpg",
+    "email": "nusrat.jahan@gmail.com",
+    "days_since_contact": 10,
+    "status": "almost due",
+    "tags": ["school", "best friend"],
+    "bio": "My school friend from Dhaka. We still chat about life, career, and share personal updates.",
+    "goal": 14,
+    "next_due_date": "2025-07-18"
+  },
+  {
+    "id": 3,
+    "name": "Sabbir Hossain",
+    "picture": "https://randomuser.me/api/portraits/men/55.jpg",
+    "email": "sabbir.dev@gmail.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["developer", "project mate"],
+    "bio": "Met during a web development bootcamp. We collaborate on freelance and React projects.",
+    "goal": 14,
+    "next_due_date": "2025-07-25"
+  },
+  {
+    "id": 4,
+    "name": "Tasnim Ahmed",
+    "picture": "https://randomuser.me/api/portraits/women/68.jpg",
+    "email": "tasnim.ahmed@gmail.com",
+    "days_since_contact": 16,
+    "status": "overdue",
+    "tags": ["office", "colleague"],
+    "bio": "Worked together at a startup in Dhaka. Used to brainstorm ideas and discuss tech trends.",
+    "goal": 14,
+    "next_due_date": "2025-07-12"
+  },
+  {
+    "id": 5,
+    "name": "Mehedi Hasan",
+    "picture": "https://randomuser.me/api/portraits/men/21.jpg",
+    "email": "mehedi.hasan@gmail.com",
+    "days_since_contact": 13,
+    "status": "almost due",
+    "tags": ["gym", "friend"],
+    "bio": "Gym buddy from local fitness center. We motivate each other to stay consistent and healthy.",
+    "goal": 14,
+    "next_due_date": "2025-07-19"
+  },
+  {
+    "id": 6,
+    "name": "Farzana Akter",
+    "picture": "https://randomuser.me/api/portraits/women/12.jpg",
+    "email": "farzana.akter@gmail.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["neighbor", "family friend"],
+    "bio": "Neighbor since childhood. Our families are very close and we meet during festivals.",
+    "goal": 14,
+    "next_due_date": "2025-07-27"
+  },
+  {
+    "id": 7,
+    "name": "Arif Mahmud",
+    "picture": "https://randomuser.me/api/portraits/men/76.jpg",
+    "email": "arif.mahmud@gmail.com",
+    "days_since_contact": 25,
+    "status": "overdue",
+    "tags": ["college", "football"],
+    "bio": "Played football together in college. Haven’t caught up in a while due to busy schedules.",
+    "goal": 14,
+    "next_due_date": "2025-07-08"
+  },
+  {
+    "id": 8,
+    "name": "Jannatul Ferdous",
+    "picture": "https://randomuser.me/api/portraits/women/30.jpg",
+    "email": "jannatul.ferdous@gmail.com",
+    "days_since_contact": 7,
+    "status": "on-track",
+    "tags": ["online friend", "design"],
+    "bio": "Met through an online design community. We exchange ideas about UI/UX and creativity.",
+    "goal": 14,
+    "next_due_date": "2025-07-23"
+  }
+]
