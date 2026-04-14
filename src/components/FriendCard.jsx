@@ -1,10 +1,11 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const FriendCard = ({friend}) => {
-
     const {id,name, picture, email, tags, status, days_since_contact} = friend;
     return (
+      <Link href={`/friend/${id}`}>
         <div className='bg-base-100 rounded-2xl p-6 shadow-sm flex flex-col items-center text-center gap-3'>
              <Image
                     src={picture}
@@ -36,6 +37,7 @@ const FriendCard = ({friend}) => {
              
             
         </div>
+      </Link>
     );
 };
 

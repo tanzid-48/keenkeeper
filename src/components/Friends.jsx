@@ -7,7 +7,7 @@ const Friends = () => {
 
     const filePath = path.join(process.cwd(),'public','data.json');
     const friends = JSON.parse(fs.readFileSync(filePath,'utf-8'));
-    console.log(friends,"hello");
+    // console.log(friends,"hello");
     return (
         <div className='w-11/12 mx-auto'>
             <h3 className='font-bold text-xl py-6'>Your Friends</h3>
