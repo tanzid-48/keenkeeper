@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Rahim Uddin",
+    "name": "Tanzid Mondol",
     "picture": "https://randomuser.me/api/portraits/men/32.jpg",
     "email": "rahim.uddin@gmail.com",
     "days_since_contact": 20,
@@ -13,7 +13,7 @@
   },
   {
     "id": 2,
-    "name": "Nusrat Jahan",
+    "name": "Mehajabin Raki",
     "picture": "https://randomuser.me/api/portraits/women/44.jpg",
     "email": "nusrat.jahan@gmail.com",
     "days_since_contact": 10,
@@ -25,7 +25,7 @@
   },
   {
     "id": 3,
-    "name": "Sabbir Hossain",
+    "name": "Liam Thompson",
     "picture": "https://randomuser.me/api/portraits/men/55.jpg",
     "email": "sabbir.dev@gmail.com",
     "days_since_contact": 5,
@@ -37,7 +37,7 @@
   },
   {
     "id": 4,
-    "name": "Tasnim Ahmed",
+    "name": "Amelia Johnson",
     "picture": "https://randomuser.me/api/portraits/women/68.jpg",
     "email": "tasnim.ahmed@gmail.com",
     "days_since_contact": 16,
@@ -49,7 +49,7 @@
   },
   {
     "id": 5,
-    "name": "Mehedi Hasan",
+    "name": "Noah Williams",
     "picture": "https://randomuser.me/api/portraits/men/21.jpg",
     "email": "mehedi.hasan@gmail.com",
     "days_since_contact": 13,
@@ -61,7 +61,7 @@
   },
   {
     "id": 6,
-    "name": "Farzana Akter",
+    "name": "Isabella Brown",
     "picture": "https://randomuser.me/api/portraits/women/12.jpg",
     "email": "farzana.akter@gmail.com",
     "days_since_contact": 3,
@@ -73,7 +73,7 @@
   },
   {
     "id": 7,
-    "name": "Arif Mahmud",
+    "name": "Ethan Davis",
     "picture": "https://randomuser.me/api/portraits/men/76.jpg",
     "email": "arif.mahmud@gmail.com",
     "days_since_contact": 25,
@@ -85,7 +85,7 @@
   },
   {
     "id": 8,
-    "name": "Jannatul Ferdous",
+    "name": "Olivia Wilson",
     "picture": "https://randomuser.me/api/portraits/women/30.jpg",
     "email": "jannatul.ferdous@gmail.com",
     "days_since_contact": 7,
@@ -94,5 +94,30 @@
     "bio": "Met through an online design community. We exchange ideas about UI/UX and creativity.",
     "goal": 14,
     "next_due_date": "2025-07-23"
+  },
+  {
+    "id": 9,
+    "name": "James Carter",
+    "picture": "https://randomuser.me/api/portraits/men/75.jpg",
+    "email": "tanzid.mondol@gmail.com",
+    "days_since_contact": 20,
+    "status": "overdue",
+    "tags": ["university", "close friend"],
+    "bio": "We studied CSE together at university. Used to work on programming contests and late-night coding sessions.",
+    "goal": 14,
+    "next_due_date": "2025-07-10"
+  },
+  {
+    "id": 10,
+    "name": "Sofia Martinez",
+    "picture": "https://randomuser.me/api/portraits/women/65.jpg",
+    "email": "mahajabin.raki@gmail.com",
+    "days_since_contact": 10,
+    "status": "almost due",
+    "tags": ["school", "best friend"],
+    "bio": "My school friend from Dhaka. We still chat about life, career, and share personal updates.",
+    "goal": 14,
+    "next_due_date": "2025-07-18"
   }
+
 ]
