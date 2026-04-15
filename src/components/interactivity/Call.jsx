@@ -3,6 +3,7 @@ import { CallContext} from '@/app/context/AllContext';
 import { useContext } from 'react';
 
 import { IoMdCall } from 'react-icons/io';
+import { toast } from 'react-toastify';
 
 const Call = ({friend}) => {
 
@@ -10,8 +11,9 @@ const Call = ({friend}) => {
  console.log(calls,"call dio");
     
 const handleCallButton = () => {
- console.log("cal button Clicked");
+//  console.log("cal button Clicked");
   setCalls([...calls,{ ...friend, date: new Date().toLocaleDateString(),time: new Date().toLocaleTimeString()}]) 
+   toast.success(`Call logged with ${friend.name}`)
 
 }
 
