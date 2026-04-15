@@ -3,6 +3,11 @@ import path from 'path';
 import DetailsPageCard from '@/components/DetailsPageCard';
 import { notFound } from 'next/navigation';
 
+export const metadata = {
+  title: " Friend Details| KeenKeeper ",
+  description: "View and manage your relationship with this contact.",
+};
+
 const FriendDetailsPage = async ({ params }) => {
     const { id } = await params;
     const filePath = path.join(process.cwd(), 'public', 'data.json');
