@@ -9,8 +9,11 @@ const Videos = ({ friend }) => {
      const {videos,setVideos} = useContext(VideoContext)
 
      const handleVideoButton = () => {
-            setVideos([...videos,{ ...friend, date: new Date().toLocaleDateString(), time: new Date().toLocaleTimeString() }]);
+            setVideos([...videos,{ ...friend, date: new Date().toLocaleDateString(), time: new Date().toLocaleTimeString(),
+            createdAt: Date.now()
+             }]);
             toast.success(`Video call${friend.name}`)
+            
     
         }
     return (

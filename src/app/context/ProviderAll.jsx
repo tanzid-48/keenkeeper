@@ -9,22 +9,17 @@ const ProviderAll = ({ children }) => {
     const [texts, setTexts] = useState([]);
     const [videos, setVideos] = useState([]);
 
-
-    const data = {
-        calls,
-        setCalls,
-        texts,
-        setTexts,
-        videos,
-        setVideos
-    };
-
     return (
-        <CallContext.Provider value={data}>
-            <TextContext.Provider value={data}>
-                <VideoContext.Provider value={data}>
+        <CallContext.Provider value={{
+            calls,
+            setCalls
+        }}>
+            <TextContext.Provider value={{  texts,
+        setTexts}}>
+                <VideoContext.Provider value={{videos,
+        setVideos}}>
                     {children}
-            </VideoContext.Provider>
+                </VideoContext.Provider>
             </TextContext.Provider>
         </CallContext.Provider>
     );

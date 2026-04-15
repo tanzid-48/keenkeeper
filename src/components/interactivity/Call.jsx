@@ -12,7 +12,9 @@ const Call = ({friend}) => {
     
 const handleCallButton = () => {
 //  console.log("cal button Clicked");
-  setCalls([...calls,{ ...friend, date: new Date().toLocaleDateString(),time: new Date().toLocaleTimeString()}]) 
+  setCalls([...calls,{ ...friend, date: new Date().toLocaleDateString(),time: new Date().toLocaleTimeString(),
+  createdAt: Date.now()
+  }]) 
    toast.success(`Call logged with ${friend.name}`)
 
 }

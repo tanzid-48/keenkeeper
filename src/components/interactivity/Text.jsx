@@ -9,7 +9,9 @@ const Text = ({ friend }) => {
     const { texts, setTexts } = useContext(TextContext)
 
     const handleTextButton = () => {
-        setTexts([...texts, { ...friend, date: new Date().toLocaleDateString(), time: new Date().toLocaleTimeString() }]);
+        setTexts([...texts, { ...friend, date: new Date().toLocaleDateString(), time: new Date().toLocaleTimeString(),
+        createdAt: Date.now()
+         }]);
         toast.success(`Texted ${friend.name}`)
 
     }
