@@ -4,15 +4,12 @@ import React from 'react';
 import { FaArchive, FaVideo } from 'react-icons/fa';
 import { IoMdCall, IoMdText } from 'react-icons/io';
 import { MdDeleteForever, MdNotificationsPaused } from 'react-icons/md';
+import Call from './interactivity/Call';
+
 
 const DetailsPageCard = ({ friend }) => {
 
     const { id, name, picture, email, tags, status, days_since_contact, bio, goal, next_due_date } = friend;
-    const statusConfig = {
-        overdue: { label: 'Overdue', cls: 'bg-red-400 text-white' },
-        'almost due': { label: 'Almost Due', cls: 'bg-orange-400 text-white' },
-    };
-    const { label: statusLabel, cls: statusCls } = statusConfig[status] ?? { label: 'On Track', cls: 'bg-green-500 text-white' };
 
       return (
         <div className="grid grid-cols-1 md:grid-cols-[220px_1fr] gap-4 w-11/12 mx-auto items-start py-6">
@@ -97,9 +94,7 @@ const DetailsPageCard = ({ friend }) => {
    <div className="bg-white rounded-xl shadow-sm p-5">
                     <p className="text-sm font-semibold text-slate-700 mb-3">Quick Check-In</p>
                     <div className="grid grid-cols-3 sm:grid-cols-3 gap-2">
-                         <button className="btn p-8 flex flex-col">   
-                        <h3 className='text-xl font-bold'><IoMdCall />Call</h3>
-                    </button>
+                     <Call friend = {friend}></Call>
                      <button className="btn p-8 flex flex-col">
                      <h3 className='text-xl font-bold' > <IoMdText /> Text</h3>
                     </button>
