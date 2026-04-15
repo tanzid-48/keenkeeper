@@ -2,17 +2,17 @@ import Image from 'next/image';
 import React from 'react';
 
 import { FaArchive, FaVideo } from 'react-icons/fa';
-import { IoMdCall, IoMdText } from 'react-icons/io';
 import { MdDeleteForever, MdNotificationsPaused } from 'react-icons/md';
 import Call from './interactivity/Call';
 import Text from './interactivity/Text';
+import Videos from './interactivity/Videos';
 
 
 const DetailsPageCard = ({ friend }) => {
 
     const { id, name, picture, email, tags, status, days_since_contact, bio, goal, next_due_date } = friend;
 
-      return (
+    return (
         <div className="grid grid-cols-1 md:grid-cols-[220px_1fr] gap-4 w-11/12 mx-auto items-start py-6">
             <div className="flex flex-col gap-3">
                 <div className="bg-white rounded-2xl shadow-sm p-6 flex flex-col items-center text-center gap-3">
@@ -24,14 +24,14 @@ const DetailsPageCard = ({ friend }) => {
                         className="rounded-full object-cover w-18 h-18"
                     />
                     <h4 className="font-semibold text-[17px] text-slate-800 mt-1">{name}</h4>
-                  <span className={`badge text-white text-sm px-4 py-3 rounded-full ${status === 'overdue' ? 'bg-red-400' :
-                            status === 'almost due' ? 'bg-orange-400' :
-                                'bg-green-500'
-                            }`}>
-                            {status === 'overdue' ? 'Overdue' :
-                                status === 'almost due' ? 'Almost Due' :
-                                    'On Track'}
-                        </span>
+                    <span className={`badge text-white text-sm px-4 py-3 rounded-full ${status === 'overdue' ? 'bg-red-400' :
+                        status === 'almost due' ? 'bg-orange-400' :
+                            'bg-green-500'
+                        }`}>
+                        {status === 'overdue' ? 'Overdue' :
+                            status === 'almost due' ? 'Almost Due' :
+                                'On Track'}
+                    </span>
 
                     <div className="flex gap-2 flex-wrap justify-center">
                         {tags.map((tag, i) => (
@@ -59,28 +59,28 @@ const DetailsPageCard = ({ friend }) => {
                 </div>
 
             </div>
-               <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-3">
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                     <div className="bg-base-100 shadow-sm rounded-xl hover:shadow-md">
- <div className="card-body items-center text-center">
-               <h2 className="text-3xl font-bold">{days_since_contact}</h2>
+                        <div className="card-body items-center text-center">
+                            <h2 className="text-3xl font-bold">{days_since_contact}</h2>
                             <p className="text-slate-400 text-sm">Days Since Contact</p>
                         </div>
                     </div>
-                     <div className="bg-base-100 shadow-sm rounded-xl hover:shadow-md">
+                    <div className="bg-base-100 shadow-sm rounded-xl hover:shadow-md">
                         <div className="card-body items-center text-center">
                             <h2 className="text-3xl font-bold">{goal}</h2>
                             <p className="text-slate-400 text-sm">Goal (Days)</p>
                         </div>
                     </div>
-                      <div className="bg-base-100 shadow-sm rounded-xl hover:shadow-md">
+                    <div className="bg-base-100 shadow-sm rounded-xl hover:shadow-md">
                         <div className="card-body items-center text-center">
                             <h2 className="text-3xl font-bold">{next_due_date}</h2>
                             <p className="text-slate-400 text-sm">Next Due</p>
                         </div>
-                    </div>                  
+                    </div>
                 </div>
-               
+
                 <div className="bg-white rounded-xl shadow-sm p-5 flex items-center justify-between">
                     <div>
                         <p className="text-sm font-semibold text-slate-700 mb-1">Relationship Goal</p>
@@ -92,14 +92,12 @@ const DetailsPageCard = ({ friend }) => {
                         Edit
                     </button>
                 </div>
-   <div className="bg-white rounded-xl shadow-sm p-5">
+                <div className="bg-white rounded-xl shadow-sm p-5">
                     <p className="text-sm font-semibold text-slate-700 mb-3">Quick Check-In</p>
                     <div className="grid grid-cols-3 sm:grid-cols-3 gap-2">
-                     <Call friend = {friend}></Call>
-                     <Text friend = {friend}></Text>
-                  <button className="btn p-8 flex flex-col">
-                        <h3  className='text-xl font-bold'> <FaVideo /> Video</h3>
-                    </button>                       
+                        <Call friend={friend}></Call>
+                        <Text friend={friend}></Text>
+                    <Videos friend={friend}></Videos>
                     </div>
                 </div>
 

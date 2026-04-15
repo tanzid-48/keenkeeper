@@ -1,7 +1,8 @@
 'use client'
 import React, { useContext } from 'react';
-import { CallContext, TextContext } from '../context/AllContext';
+import { CallContext, TextContext, VideoContext } from '../context/AllContext';
 import { IoMdCall, IoMdText } from 'react-icons/io';
+import { FaVideo } from 'react-icons/fa';
 
 const TimelinePage = () => {
 
@@ -9,17 +10,18 @@ const TimelinePage = () => {
     console.log(calls,"Timeline CAlls");
     const {texts} = useContext(TextContext)
     console.log(texts,"TimeLine of TEXT");
+    const {videos} = useContext(VideoContext);
 
     const allActivity = [
         ...calls.map(c => ({...c,type: 'Call'})),
        ...texts.map(t => ({ ...t, type: 'Text' })),
-
-
+        ...videos.map(v => ({ ...v, type: 'Video' })),
 
     ]
     const icon = {
       Call:  { icon: <IoMdCall />,  bg: 'bg-green-100',  color: 'text-green-600' },
        Text:  { icon: <IoMdText />,  bg: 'bg-blue-100',   color: 'text-blue-500' },
+       Video:  { icon: <FaVideo />,  bg: 'bg-purple-100',   color: 'text-blue-500' },
        
     }
 
