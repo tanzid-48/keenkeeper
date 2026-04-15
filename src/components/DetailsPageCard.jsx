@@ -5,6 +5,7 @@ import { FaArchive, FaVideo } from 'react-icons/fa';
 import { IoMdCall, IoMdText } from 'react-icons/io';
 import { MdDeleteForever, MdNotificationsPaused } from 'react-icons/md';
 import Call from './interactivity/Call';
+import Text from './interactivity/Text';
 
 
 const DetailsPageCard = ({ friend }) => {
@@ -95,9 +96,7 @@ const DetailsPageCard = ({ friend }) => {
                     <p className="text-sm font-semibold text-slate-700 mb-3">Quick Check-In</p>
                     <div className="grid grid-cols-3 sm:grid-cols-3 gap-2">
                      <Call friend = {friend}></Call>
-                     <button className="btn p-8 flex flex-col">
-                     <h3 className='text-xl font-bold' > <IoMdText /> Text</h3>
-                    </button>
+                     <Text friend = {friend}></Text>
                   <button className="btn p-8 flex flex-col">
                         <h3  className='text-xl font-bold'> <FaVideo /> Video</h3>
                     </button>                       
