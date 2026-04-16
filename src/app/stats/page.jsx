@@ -1,5 +1,5 @@
 'use client'
-import { Pie, PieChart, Tooltip, Legend } from 'recharts';
+import { Pie, PieChart, Tooltip} from 'recharts';
 import { useContext } from 'react';
 import { CallContext, TextContext, VideoContext } from '../context/AllContext';
 

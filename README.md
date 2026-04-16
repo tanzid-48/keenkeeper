@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🤝 KeenKeeper
 
-## Getting Started
+## 🧠 Project Overview
 
-First, run the development server:
+KeenKeeper is a smart relationship management web application designed to help users keep track of their friends and maintain meaningful connections. It reminds you when to reconnect, organize contacts, and keep your friendships alive effortlessly.
+
+> Your personal shelf of meaningful connections. Keep your friendships alive — never let an important relationship fade away.
+
+🌐 **Live Site:** [keenkeeper-pi.vercel.app](https://keenkeeper-pi.vercel.app/) &nbsp;|&nbsp; 💻 **Repo:** [github.com/tanzid-48/keenkeeper](https://github.com/tanzid-48/keenkeeper)
+
+---
+
+## 🛠️ Technologies Used
+
+| Technology | Purpose |
+|---|---|
+| Next.js 14 | Framework & App Router |
+| Tailwind CSS | Utility-first Styling |
+| DaisyUI | Component Library |
+| Recharts | Activity Pie Chart |
+| React Hot Toast | Toast Notifications |
+| React Icons | Icon Library |
+| React Context API | Global State Management |
+| Vercel | Deployment |
+
+---
+
+## ✨ Key Features
+
+### 📋 Contact Management
+Browse and manage all your meaningful connections in one place. Each contact has a status — **On Track**, **Almost Due**, or **Overdue** — so you always know who needs attention.
+
+### 📞 Interaction Tracking
+Log calls, texts, and video interactions with your contacts directly from their detail page. Every interaction is timestamped with date and time.
+
+### 📅 Timeline View
+View a full history of all your interactions in one place. Filter by Calls, Texts, or Video Calls and see a visual activity breakdown with a pie chart.
+
+---
+
+## 🏁 Getting Started
 
 ```bash
+git clone https://github.com/tanzid-48/keenkeeper.git
+cd keenkeeper
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 👨‍💻 Author
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Made with ❤️ by **[Tanzid Mondol](https://github.com/tanzid-48)**  
+© 2026 Tanzid Mondol. All rights reserved.
