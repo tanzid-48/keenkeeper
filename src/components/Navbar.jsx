@@ -20,7 +20,7 @@ const Navbar = () => {
         </div>
 
         <div className="flex-none">
-          <ul className="menu menu-horizontal px-1 gap-4">
+          <ul className="menu menu-horizontal px-1 gap-3">
             <li className='font-semibold text-slate-500'>
               <Link
                 className={pathname === '/' ? 'bg-green-800 text-white' : ''}
